@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Valor Médio</h1>
+
+<script>
+
+var valores = [];
+
+for (var i=0; i < 5; i++) {
+  var valor = window.prompt("Digite o valor " + (i+1));
+  valores.push(parseInt(valor));
+}
+
+var totalValores = 0;
+for (var i=0; i < valores.length; i++) {
+  totalValores += valores[i];
+}
+
+var valorMedio = totalValores / valores.length;
+window.alert("O valor médio é " + valorMedio);
+
+</script>
+
+</body>
+</html>
+

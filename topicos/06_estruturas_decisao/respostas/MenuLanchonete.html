@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Menu lanchonete</h1>
+
+<script>
+    
+var item = window.prompt(
+"1 – X-Salada\n" +
+"2 – X-Bacon\n" +
+"3 – X-Egg\n" +
+"4 – Refrigerante\n" +
+"5 – Finalizar pedido\n\n" +
+"Escolha um item do menu: ");
+
+item = parseInt(item);
+
+switch (item) {
+  case 1:
+    window.alert("Você escolheu X-Salada");
+    break;
+  case 2:
+    window.alert("Você escolheu X-Bacon");
+    break;
+  case 3:
+    window.alert("Você escolheu X-Egg");
+    break;
+  case 4:
+    window.alert("Você escolheu Refrigerante");
+    break;
+  case 5:
+    window.alert("Você escolheu finalizar pedido");
+    break;
+  default:
+    window.alert("Item inexistente");
+    break;
+}
+    
+</script>
+
+</body>
+</html>

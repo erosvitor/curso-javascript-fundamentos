@@ -1,0 +1,56 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - VARIÁVEIS E TIPOS DE DADOS
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Na Informática, uma variável é um espaço na memória do computador utilizado para armazenar um 
+determinado dado.
+  
+Todo dado possui um tipo. Os tipos atualmente utilizados no dia-a-dia são: textos, números e valores
+binários (sim/não, verdadeiro/falso, ligado/desligado).
+   
+A Linguagem Javascript é uma liguagem de tipagem dinâmica, ou seja, o tipo do dado não é definido
+quando uma variável é declarada. A definição do tipo do dado ocorre quando o valor é atribuído a
+variável.
+
+Após um determinado valor ser atribuído, a variável pode assumir um dos seguintes tipos:
+
+- Boolean
+- Number
+- String
+  
+  
+Usando variáveis na Linguagem Javascript
+----------------------------------------------------------------------------------------------------
+As variáveis na Linguagem Javascript são não tipadas, ou seja, não é necessário informar o tipo do
+dado que será armazenado na variável.
+  
+Uma variável na Linguagem Javascript é definida da seguinte maneira:
+  
+    var <nome-variável>;
+
+
+Exemplo:
+
+var b = 127;
+var s = 32767;
+var i = 2147483647;
+var l = 3000000000;
+var f = 3.14159265;
+var d = 5000000.50;
+var c = 'j';
+var bl = true;
+
+
+Identificadores para variáveis
+----------------------------------------------------------------------------------------------------
+A definição de identificadores para variáveis deve seguir as regras abaixo:
+
+- Deve iniciar por uma letra, pelo caractere underscore (_) ou pelo caractere dolar ($)
+- Não pode iniciar por um dígito numérico
+- Não pode conter caracteres especiais, tipo sinais de pontuação, colchetes ou parênteses
+- Não pode conter espaços em branco para definir identificadores compostos
+- Nomes de variáveis são case-sensitive, ou seja, letras minusculas são diiferentes de maiúsculas
+

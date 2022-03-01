@@ -1,0 +1,70 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - STRINGS
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Uma string na Linguagem Javascript é uma sequencia de caracteres delimitados por aspas dupla ou 
+aspas simples.
+
+
+Utilizando strings
+----------------------------------------------------------------------------------------------------
+
+// Declarando uma string
+var str1;
+
+// Preenchendo uma string
+str1 = "Linguagem Javascript";
+
+// Obtendo o tamanho da string
+var tamanho = str1.length;
+console.log(tamanho);
+
+// Obtendo uma substring
+var substring;
+substring = str1.substring(0, 5);
+console.log(substring);
+
+// Substituindo uma substring por outra substring
+str1 = str1.replace("Javascript", "JAVASCRIPT");
+console.log(str1);
+
+// Substituindo todas substring por outra substring
+var str2 = "red;green;blue";
+str2 = str2.replaceAll(";", ",");
+console.log(str2);
+
+// Removendo substring
+var str3 = "81200-200";
+str3 = str3.replace("-", "");
+console.log(str3);
+
+// Comparando strings
+var str4 = "Java";
+var str5 = "Javascript";
+if (str4 === str5) {
+  console.log("São iguais");
+} else {
+  console.log("Não são iguais");
+}  
+
+// Verificando se a string é vazia
+var str6 = "";
+if (str6 === "") {
+  console.log("É vazia");
+} else {
+  console.log("Não é vazia");
+}
+
+// Removendo espaços em branco
+var str7 = " Javascript ";
+str7 = str7.trim();
+console.log(str7);
+
+// Quebrando uma string
+var str8 = "banana,abacate,abacaxi";
+var frutas = str8.split(",");
+console.log(frutas);
+

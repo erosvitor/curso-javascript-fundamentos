@@ -1,0 +1,55 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - VETORES
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Na Informática, vetores são estruturas unidimensionais utilizadas para armazenar uma quantidade
+finita de dados do mesmo tipo.
+    
+Na Linguagem Javascript os vetores são definidos da seguinte maneira:
+  
+  var <nome-vetor> = [];
+
+
+Utilizando Vetores
+----------------------------------------------------------------------------------------------------
+
+// Declarando um vetor para números inteiros
+var numeros = [];
+
+// Atribuindo dados ao vetor
+numeros[0] = 1;
+numeros[1] = 1;
+numeros[2] = 2;
+numeros[3] = 3;
+numeros[4] = 5;
+
+// Atribuindo dados ao vetor na declaração
+var pares = [ 0, 2, 4, 6, 8 ];
+
+// Mostrando os dados contidos no vetor
+for (var i = 0; i < 5; i++) {
+  console.log(numeros[i]);
+}
+
+// Utilizando o tamanho do vetor
+for (var i = 0; i < pares.length; i++) {
+  console.log(pares[i]);
+}
+
+// Armazenando textos em vetores
+var frutas = [];
+frutas[0] = "Uva";
+frutas[1] = "Maçã";
+frutas[2] = "Abacaxi";
+frutas[3] = "Manga";
+frutas[4] = "Banana";
+
+// Ordenando um vetor de textos
+frutas.sort();
+for (var i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+

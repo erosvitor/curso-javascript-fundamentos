@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calcular preço consumidor</h1>
+
+<script>
+var porcentagemDistribuidor = 28/100;
+var impostos = 45/100;
+
+var custoFabrica = window.prompt("Informe o custo de fábrica: ", "");
+custoFabrica = parseFloat(custoFabrica);
+
+var precoConsumidor = custoFabrica + (custoFabrica * porcentagemDistribuidor);
+precoConsumidor = precoConsumidor + (precoConsumidor * impostos);
+window.alert("O preço consumidor é de " + precoConsumidor.toFixed(2));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Média Aritmética</h1>
+
+<script>
+
+var qtde = 1;
+var nota = 0.0;
+var somaDasNotas = 0.0;
+while (qtde <= 4) {
+  nota = window.prompt("Digite a nota " + qtde + ": ");
+  nota = parseFloat(nota);
+  somaDasNotas += nota;
+  qtde++;
+}
+
+var media = somaDasNotas / 4;
+window.alert("A média aritmética é: " + media);
+    
+</script>
+
+</body>
+</html>

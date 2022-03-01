@@ -1,0 +1,45 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - DATA E HORA
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+A Linguagem Javascript provê suporte a data e hora.
+
+
+Utilizando data e hora
+----------------------------------------------------------------------------------------------------
+
+// Exibindo a data e hora atual
+var data1 = new Date();
+console.log(data1);
+
+// Formatando a data e hora atual
+var data2 = new Date();
+console.log(data2.toLocaleDateString("pt-BR"));
+
+// Criando uma data e hora específica
+var data3Str = "01/01/1995 12:30:00";
+var data3 = new Date(data3Str);
+console.log(data3);
+
+// Manipulando uma data
+var data4 = new Date();
+data4.setDate(data4.getDate() + 3);
+console.log(data4);
+data4.setMonth(data4.getMonth() + 2);
+console.log(data4);
+
+// Extraindo dados de uma data
+var data5 = new Date();
+var diaDaSemana = data5.getDay();
+var diaDoMes = data5.getDate();
+var mes = data5.getMonth() + 1;
+var ano = data5.getFullYear();
+
+console.log("Dia da semana: " + diaDaSemana);
+console.log("Dia: " + diaDoMes);
+console.log("Mês: " + mes);
+console.log("Ano: " + ano);
+

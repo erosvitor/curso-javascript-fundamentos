@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Dia da semana que o usuário nasceu</h1>
+
+<script>
+
+var dataNascimentoStr = window.prompt("Digite a sua data de nascimento: ");
+
+var dataNascimentoArray = dataNascimentoStr.split("/");
+var dataNascimento = new Date(dataNascimentoArray[2] + "/" + dataNascimentoArray[1] + "/" + dataNascimentoArray[0]);
+var diaSemana = dataNascimento.getDay();
+
+var nomeDiaSemana = null;
+switch (diaSemana) {
+  case 0:
+    nomeDiaSemana = "Domingo"; break;
+  case 1:
+    nomeDiaSemana = "Segunda-feira"; break;
+  case 2:
+    nomeDiaSemana = "Terça-feira"; break;
+  case 3:
+    nomeDiaSemana = "Quarta-feira"; break;
+  case 4:
+    nomeDiaSemana = "Quinta-feira"; break;
+  case 5:
+    nomeDiaSemana = "Sexta-feira"; break;
+  case 6:
+    nomeDiaSemana = "Sábado"; break;
+}
+
+window.alert("Você nasceu na(o) " + nomeDiaSemana);
+
+</script>
+
+</body>
+</html>
+

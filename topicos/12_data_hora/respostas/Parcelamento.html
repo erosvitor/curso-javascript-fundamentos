@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Parcelamento</h1>
+
+<script>
+var dataAtual = new Date();
+
+var valorCompra = window.prompt("Digite o valor da compra: ");
+valorCompra = Number.parseFloat(valorCompra);
+
+var numeroParcelas = window.prompt("Deseja parcelar em quantas vezes (2-5)?");
+numeroParcelas = Number.parseInt(numeroParcelas);
+
+var valorParcelado = valorCompra / numeroParcelas;
+
+for (var i=0; i < numeroParcelas; i++) {
+  dataAtual.setDate(dataAtual.getDate() + 30);
+  
+  document.write("Parcela " + (i+1) + ", " + valorParcelado.toFixed(2) + "<br/>");
+  document.write("Pagamento em: " + dataAtual.toLocaleDateString("pt-BR") + "<br/>");
+}
+</script>
+
+</body>
+</html>

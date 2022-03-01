@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Pessoa mais velha</h1>
+
+<script>
+
+var pessoas = [];
+pessoas[0] = [];
+pessoas[1] = [];
+pessoas[2] = [];
+
+for (var i=0; i < 3; i++) {
+  var nome = window.prompt("Digite o nome da pessoa " + (i+1));
+  pessoas[i].push(nome);
+  var idade = window.prompt("Digite a idade da pessoa " + (i+1));
+  pessoas[i].push(parseInt(idade));
+}
+
+var idadePessoaMaisVelha = 0;
+var nomePessoaMaisVelha = null;
+for (var i=0; i < 3; i++) {
+  if (pessoas[i][1] > idadePessoaMaisVelha) {
+    idadePessoaMaisVelha = pessoas[i][1];
+    nomePessoaMaisVelha = pessoas[i][0];
+  }
+}
+
+window.alert("A pessoa mais velha é a " + nomePessoaMaisVelha);
+
+</script>
+
+</body>
+</html>

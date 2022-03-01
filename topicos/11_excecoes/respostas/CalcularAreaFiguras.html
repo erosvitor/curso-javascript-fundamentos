@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calcular área figuras</h1>
+
+<script>
+function calcularAreaQuadrado() {
+  try {
+    let lado = window.prompt("Digite o lado do quadrado: ")
+    lado = Number.parseInt(lado)
+    const area = lado * lado
+    window.alert("A área do quadrado é " + area)
+  } catch (e) {
+    window.alert("O lado informado está incorreto")
+  }
+}
+  
+function calcularAreaTriangulo() {
+  try {
+    let base = window.prompt("Digite a base do triângulo: ")
+    base = Number.parseInt(base)
+    let altura = window.prompt("Digite a altura do triângulo: ")
+    altura = Number.parseInt(altura)
+    const area = (base * altura) / 2
+    window.alert("A área do triângulo é " + area)
+  } catch (e) {
+    window.alert("A base ou a altura está incorreta")
+  }
+}
+
+while (true) {
+  let opcao = window.prompt(
+    "1 - Calcular área quadrado\n" +
+    "2 - Calcular área triângulo\n" +
+    "3 - Finalizar\n\n" +
+    "Digite a opção: ");
+
+  if (opcao === "1") {
+    calcularAreaQuadrado();
+  } else if (opcao === "2") {
+    calcularAreaTriangulo();
+  } else if (opcao === "3") {
+    break;
+  } else {
+    window.alert("Opção inválida! Tente novamente")
+  }
+}
+</script>
+
+</body>
+</html>
+

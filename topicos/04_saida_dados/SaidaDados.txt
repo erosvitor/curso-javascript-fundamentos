@@ -1,0 +1,84 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - SAÍDA DE DADOS
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Saída de dados é a operação que consiste em mostrar dados ao usuário usando a tela do monitor.
+  
+A Linguagem Javascript disponibiliza os seguintes comandos para saída de dados:
+  
+  document.write - Exibe um dado no documento HTML sem avançar linha
+  window.alert   - Exibe um dado utilizando uma caixa de diálogo
+  console.log    - Exibe um dado no console do navegador
+
+
+Exemplo 'document.write':
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Saída de dados</h1>
+
+<script>
+// Mostrando um texto fixo
+document.write("Comando 'document.write'");
+
+// Mostrando o conteúdo de uma variável
+var PI = 3.14159265;
+document.write(PI);
+
+// Mesclando texto fixo com conteúdo de variável
+document.write("O valor da constante PI é " + PI);
+</script>
+
+</body>
+</html>
+
+
+Exemplo 'window.alert':
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Saída de dados</h1>
+
+<script>
+// Mostrando um texto fixo
+window.alert("Comando 'window.alert'");
+
+// Mostrando o conteúdo de uma variável
+var PI = 3.14159265;
+window.alert(PI);
+
+// Mesclando texto fixo com conteúdo de variável
+window.alert("O valor da constante PI é " + PI);
+</script>
+
+</body>
+</html> 
+
+
+Exemplo 'console.log':
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Saída de dados</h1>
+
+<script>
+// Mostrando um texto fixo
+console.log("Comando 'console.log'");
+
+// Mostrando o conteúdo de uma variável
+var PI = 3.14159265;
+console.log(PI);
+
+// Mesclando texto fixo com conteúdo de variável
+console.log("O valor da constante PI é " + PI);
+</script>
+
+</body>
+</html>
+

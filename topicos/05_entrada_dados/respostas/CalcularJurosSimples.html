@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calcular Juros Simples</h1>
+
+<script>
+var capital = window.prompt("Digite o capital: ", "");
+
+var taxa = window.prompt("Digite a taxa de juros (mensal): ", "");
+
+var periodo = window.prompt("Digite o período (em meses): ", "");
+
+var juros = capital * (taxa/100) * periodo;
+window.alert("O juros calculado foi de " + juros.toFixed(2));
+</script>
+
+</body>
+</html>

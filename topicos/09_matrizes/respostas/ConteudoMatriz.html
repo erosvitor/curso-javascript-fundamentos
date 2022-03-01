@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Mostra conteúdo de uma matriz</h1>
+
+<script>
+
+var matriz = [];
+matriz[0] = [];
+matriz[1] = [];
+
+for (var i=0; i < 2; i++) {
+  for (var j=0; j < 2; j++) {
+    var valor = window.prompt("Digite o elemento para a posição " + i + "," + j + " da matriz: ");
+    matriz[i].push(parseInt(valor));
+  }
+}
+
+for (var i=0; i < matriz.length; i++) {
+  for (var j=0; j < matriz[i].length; j++) {
+    document.write(matriz[i][j] + "<br/>");
+  }
+  document.write("<br/>");
+}
+
+</script>
+
+</body>
+</html>
+

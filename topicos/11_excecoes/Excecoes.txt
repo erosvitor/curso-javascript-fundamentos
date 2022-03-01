@@ -1,0 +1,91 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - EXCEÇÕES
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Uma exceção é um comportamento inexperado que ocorre durante a execução de um programa de computador
+quando algo não planejado ocorre.
+
+Possíveis causas de exceções:
+- Entrada de dados inválida
+- Conversão de dados inválida
+- Manipulação de arquivos inexistentes
+- Falta de permissão para escrever em diretório
+- Queda servidor do banco de dados 
+
+
+Tratando exceções
+---------------------------------------------------------------------------------------------------- 
+A Linguagem Javascript disponibiliza o bloco de comando 'try..catch' para capturar e tratar exceções.
+
+Sintaxe:
+
+  try {
+    <comandos>
+  } catch (<exception>) {
+    <tratamento-excecao>
+  } 
+
+
+Exemplo:
+
+var value = 1;
+try {
+  value.toUpperCase();
+} catch (e) {
+  console.log("Número não pode ser convertido para caixa alta");
+}
+
+
+Tratando exceções específicas
+---------------------------------------------------------------------------------------------------- 
+Durante a execução de um bloco de comandos é possível que ocorre mais de uma exceção. Para tratar de
+forma específica uma determinada exceção é necessário informar o nome da exceção após o comando
+'except'.
+
+Exceções mais conhecidas:
+- TypeError: ocorre quando a variável não contém um tipo válido
+- RangeError: ocorre quando a variável numérica está fora do range permitido
+- ReferenceError: ocorre quando é encontrado o uso de uma referência inválida, por exemplo, o nome
+  de uma função inexistente. 
+- SyntaxError: ocorre quando um erro de sintaxe é encontrado
+
+
+var n1 = "aa";
+var n2 = 0;
+
+try {
+  var resultado = Integer.parseInt(n1) / n2;
+} catch (e) {
+  if (e instanceof ReferenceError) {
+    console.log("Ocorreu o seguinte erro na conversão para inteiro: " + e.toString());
+  } else {
+    console.log("Erro desconhecido");
+  }  
+}
+
+
+Bloco Finally
+---------------------------------------------------------------------------------------------------- 
+Muitas vezes precisamos que um determinado bloco de comandos seja executado independente se ocorreu
+ou não uma exceção. Este bloco é o 'finally'
+
+
+var n1 = "aa";
+var n2 = 0;
+
+try {
+  var resultado = Number.parseInt(n1) / n2;
+} catch (e) {
+  if (e instanceof ReferenceError) {
+    console.log("Ocorreu o seguinte erro na conversão para inteiro: " + e.toString());
+  } else {
+    console.log("Erro desconhecido");
+  }  
+} finally {
+  console.log("Este comando sempre será executado");
+}
+
+

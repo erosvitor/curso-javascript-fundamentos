@@ -1,0 +1,58 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - ENTRADA DE DADOS
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Entrada de dados é a operação que consiste em receber dados do usuário através do teclado.
+
+A Linguagem Javascript disponibiliza os seguintes comandos para entrada de dados:
+
+  window.prompt   - Recebe um dado informado pelo usuário. Sempre no formato String.
+  window.confirm  - Recebe uma entrada do tipo booleano atraves de uma caixa de diálogo.
+
+
+Exemplo 'window.prompt':
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Entrada de dados</h1>
+
+<script>
+// Recebendo um texto
+var nome = window.prompt("Qual é o seu nome?", "");
+window.alert("Olá " + nome);
+
+// Recebendo um número inteiro
+var idade = window.prompt("Qual é a sua idade?", "");
+window.alert("Você tem " + idade + " anos");
+
+</script>
+
+</body>
+</html>
+
+
+Exemplo 'window.confirm':
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Entrada de dados</h1>
+
+<script>
+
+var answer = window.confirm("Deseja sair do aplicativo?");
+if (answer === true) {
+  window.alert("Saindo do aplicativo...");
+} else {
+  window.alert("Continuar no aplicativo...");
+}
+
+</script>
+
+</body>
+</html>
+

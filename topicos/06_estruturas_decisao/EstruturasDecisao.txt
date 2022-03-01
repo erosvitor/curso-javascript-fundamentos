@@ -1,0 +1,136 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - ESTRUTURAS DE DECISÃO
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Estruturas de decisão são blocos de comandos que permitem ao programa de computador executar ou não
+um determinado conjunto de comandos de acordo com o resultado de uma expressão lógica.
+  
+As estruturas de decisão disponíveis na Linguagem Javascript são:
+  
+  IF
+  SWITCH
+
+
+Estrutura de decisão 'IF'
+  
+A estrutura de decisão IF avalia expressões relacionais e lógicas para a tomada de decisão. A 
+Linguagem Javascript disponibiliza os seguintes operadores relacionais:
+  
+  igual           ( = )
+  não igual       ( != )
+  maior que       ( > )
+  menor que       ( < )
+  maior igual que ( >= )
+  menor igual que ( <= )
+    
+Além dos operadores relacionais, a Liguagem Javascript também oferece os seguintes operadores lógicos:
+    
+  e       ( && )
+  ou      ( || )
+  negação ( ! )
+
+
+Exemplo:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Estrutura decisão - IF</h1>
+
+<script>
+
+// Avaliando apenas o resultado positivo
+// ----------------------------------------------------------------------------------------------------
+var idade1 = 18;
+if (idade1 >= 18) {
+  document.write("Maior de idade<br/>");
+}
+
+// Avaliando o resultado positivo e negativo
+// ----------------------------------------------------------------------------------------------------
+var idade2 = 17;
+if (idade2 >= 18) {
+  document.write("Maior de idade<br/>");
+} else {
+  document.write("Menor de idade<br/>");
+}
+
+// Avaliando mais de uma situação
+// ----------------------------------------------------------------------------------------------------
+var idade3 = 15;
+if (idade3 >= 18) {
+  document.write("Maior de idade<br/>");
+} else if (idade3 >= 16) {
+  document.write("Menor de idade e pode votar<br/>");
+} else {
+  document.write("Menor de idade e não pode votar<br/>");
+}
+
+</script>
+
+</body>
+</html>
+
+  
+Estrutura de decisão 'SWITCH'
+
+A estrutura de decisão SWITCH avalia o conteúdo de uma variável e não o resultado de uma expressão 
+lógica. A variável precisa ser dos seguintes tipos: char, byte, short e int.
+
+Outra diferença em relação a estrutura IF é a facilidade de ler e entender o código quando é preciso
+avaliar muitas condições.
+  
+
+Exemplo:
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Estrutura decisão - SWITCH</h1>
+
+<script>
+
+// Avaliando conteúdo de uma variável numérica
+// ----------------------------------------------------------------------------------------------------
+var itemCardapio = 2;
+switch (itemCardapio) {
+  case 1:
+    document.write("Escolheu o item 1<br/>");
+    break;
+  case 2:
+    document.write("Escolheu o item 2<br/>");
+    break;
+  case 3:
+    document.write("Escolheu o item 3<br/>");
+    break;
+  default:
+    document.write("Item inexistente<br/>");
+    break;
+}
+
+// Avaliando conteúdo de uma variável String
+// ----------------------------------------------------------------------------------------------------
+var color = "blue";
+switch (color) {
+  case "red":
+    document.write("Vermelho<br/>");
+    break;
+  case "green":
+    document.write("Verde<br/>");
+    break;
+  case "blue":
+    document.write("Azul<br/>");
+    break;
+  default:
+    document.write("Cor inválida<br/>");
+    break;
+}
+
+</script>
+
+</body>
+</html>
+

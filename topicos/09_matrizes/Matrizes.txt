@@ -1,0 +1,42 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS JAVASCRIPT - MATRIZES
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Na Informática, matrizes são estruturas multidimensionais utilizadas para armazenar uma quantidade
+finita de dados do mesmo tipo.
+    
+Na Linguagem Javascript as matrizes são definidas da seguinte maneira:
+  
+  var <nome-matriz> = [];
+
+
+Utilizando Matrizes
+----------------------------------------------------------------------------------------------------
+
+// Declarando uma matriz para números inteiros
+var numeros = [];
+
+// Atribuindo dados para a matriz
+numeros[0] = [1, 1];
+numeros[1] = [2, 3];
+
+// Atribuindo dados para a matriz na declaração
+var coordenadas = [ [ 2, 2 ], [ 2, 8 ], [ 5, 2 ], [ 3, 2 ] ];
+
+// Mostrando os dados contidos na matriz
+for (var i = 0; i < 2; i++) {
+  for (var j = 0; j < 2; j++) {
+    console.log(numeros[i][j]);
+  }
+}
+
+// Utilizando o tamanho da matriz
+for (var i = 0; i < coordenadas.length; i++) {
+  for (var j = 0; j < coordenadas[i].length; j++) {
+    console.log(coordenadas[i][j]);
+  }
+}
+

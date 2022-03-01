@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Menu lanchonete</h1>
+
+<script>
+   
+var totalPedido = 0.0;
+
+var item = 0;
+do {
+  item = window.prompt(
+  "1 – X-Salada (5,30)\n" +
+  "2 – X-Bacon (6,00)\n" +
+  "3 – X-Egg (6,70)\n" +
+  "4 – Refrigerante (3,2)\n" +
+  "5 – Finalizar pedido\n\n" +
+  "Escolha um item do menu: ");
+
+  item = parseInt(item);
+
+  switch (item) {
+    case 1:
+      document.write("Você escolheu X-Salada<br/>");
+      totalPedido += 5.30;
+     break;
+    case 2:
+      document.write("Você escolheu X-Bacon<br/>");
+      totalPedido += 6.00;
+      break;
+    case 3:
+      document.write("Você escolheu X-Egg<br/>");
+      totalPedido += 6.70;
+      break;
+    case 4:
+      document.write("Você escolheu Refrigerante<br/>");
+      totalPedido += 3.2;
+      break;
+    case 5:
+      break;
+    default:
+      document.write("Item inexistente<br/>");
+      break;
+  }
+} while (item != 5);
+
+window.alert("O total do seu pedido é: " + totalPedido);
+    
+</script>
+
+</body>
+</html>
+

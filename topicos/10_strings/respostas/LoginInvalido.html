@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Login</h1>
+
+<script>
+
+var login = null;
+var loginValido = true;
+do {
+  login = window.prompt("Digite o login: ");
+  
+  if (login.trim() === "") {
+    window.alert("Login inválido, tente novamente.");
+    loginValido = false;
+  } else {
+    window.alert("Login válido.");
+    loginValido = true;
+  }
+} while (!loginValido);
+
+</script>
+
+</body>
+</html>
+
