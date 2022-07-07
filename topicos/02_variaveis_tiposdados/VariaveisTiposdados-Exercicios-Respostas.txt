@@ -21,7 +21,7 @@ Marque com V os identificadores válidos e com I os identificadores inválidos.
 
 ( V ) abc      ( I ) 3abc      ( V ) a 
 ( I ) 123a     ( I ) a?B       ( V ) acdl 
-( I ) _        ( V ) A_a       ( I ) 1 
+( V ) _        ( V ) A_a       ( I ) 1 
 ( V ) Al23     ( V ) _1        ( V ) A_$_ 
 ( V ) $var     ( V ) _$        ( V ) b3l2 
 ( I ) AB.DE    ( I ) etc...    ( I ) guarda-chuva
@@ -36,7 +36,7 @@ R: Espaço na memória do computador para armazenar dados.
 
 Exercício 04
 ----------------------------------------------------------------------------------------------------
-Quais os tipos de dados primitivos da linguagem Javascript?
+A tipagem de dados na Linguagem Javascript é estática ou dinâmica?
 
-R: Boolean, String e Number
+R: Tipagem dinâmica
 

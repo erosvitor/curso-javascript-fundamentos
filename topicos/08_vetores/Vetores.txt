@@ -53,3 +53,40 @@ for (var i = 0; i < frutas.length; i++) {
   console.log(frutas[i]);
 }
 
+
+Operações sobre vetores
+---------------------------------------------------------------------------------------------------- 
+
+var marcas_veiculos = ["Fiat", "Mercedes", "Ford", "BMW"]
+
+// Obter quantidade de elementos
+console.log(marcas_veiculos.length)
+
+// Verificar se um determinado item existe na lista
+console.log(marcas_veiculos.find( e => e == "Chevrolet"))
+
+// Adicionar item no final da lista
+marcas_veiculos.push("Chevrolet")
+console.log(marcas_veiculos)
+
+// Inserir item numa determinada posição da lista
+marcas_veiculos.splice(1, 0 , "Ferrari")
+console.log(marcas_veiculos)
+
+// Ordenar a lista em ordem ascendente
+marcas_veiculos.sort()
+console.log(marcas_veiculos)
+
+// Ordenar a lista em ordem descendente
+marcas_veiculos.reverse()
+console.log(marcas_veiculos)
+
+// Retirar o último elemento da lista
+ultimo_elemento = marcas_veiculos.pop()
+console.log(ultimo_elemento)
+console.log(marcas_veiculos)
+
+// Remover todos os elementos da lista
+// Javascript não dispõe de um método que remova todos os elementos do vetor
+
+

@@ -24,7 +24,7 @@ Escreva um programa que mostre na tela o conteúdo abaixo na forma tabular.
   =========================================================
   Linguagem C           Dennis Ritchie       1972
   Linguagem C++         Bjarne Stroustrup    1982
-  Linguagem Java        James Gosling        1991
+  Linguagem Javascript  Brendan Eich         1995
 
 
 Obs: Este exercício deve ser executado diretamente pelo Node.js
